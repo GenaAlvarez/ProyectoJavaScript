@@ -1,0 +1,31 @@
+.navContainer{
+    background-color: #d889ff;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+   
+    img{
+        height: 57px;
+        width: 100px;
+      }  
+    
+    ul{
+        margin-top: 0;
+        list-style: none;
+        display: flex;
+        justify-content: end;
+    }
+
+    li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+        margin: 20px;
+        &:hover{
+            color: #8000ff;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "navBar";
+@import "reset";
+
+.title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background-image: url(../multimedia/Img/retroGames.jpg);
+    background-size: cover;
+    object-fit: cover;
+    h1{
+        color: #d889ff;
+        font-size: 60px;
+        font-weight: 700;
+        text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    }
+
+}
+

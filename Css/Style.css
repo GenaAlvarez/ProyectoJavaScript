@@ -1,0 +1,55 @@
+.navContainer {
+  background-color: #d889ff;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.navContainer img {
+  height: 57px;
+  width: 100px;
+}
+.navContainer ul {
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+.navContainer li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 20px;
+}
+.navContainer li a:hover {
+  color: #8000ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  background-image: url(../multimedia/Img/retroGames.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.title h1 {
+  color: #d889ff;
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*# sourceMappingURL=Style.css.map */
