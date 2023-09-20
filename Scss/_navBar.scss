@@ -1,11 +1,13 @@
 .navContainer{
-    background-color: #d889ff;
+    background-color: #debeff2b;
     height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1;
+    position: fixed;
+    
    
     img{
         height: 57px;
@@ -20,12 +22,12 @@
     }
 
     li a{
-        color: #fff;
+        color: #aeaaaa;
         text-decoration: none;
         font-size: 30px;
         margin: 20px;
         &:hover{
-            color: #8000ff;
+            color: #fff;
         }
     }
 }

@@ -1,11 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navContainer {
-  background-color: #d889ff;
+  background-color: rgba(222, 190, 255, 0.168627451);
   height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
+  position: fixed;
 }
 .navContainer img {
   height: 57px;
@@ -18,19 +25,77 @@
   justify-content: end;
 }
 .navContainer li a {
-  color: #fff;
+  color: #aeaaaa;
   text-decoration: none;
   font-size: 30px;
   margin: 20px;
 }
 .navContainer li a:hover {
-  color: #8000ff;
+  color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 55px;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+.container-form p {
+  font-size: 25px;
+  margin-bottom: 30px;
+  max-width: 400px;
+  color: #fff;
+  font-weight: 700;
+}
+.container-form a {
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+.container-form a .iconos {
+  margin-right: 15px;
+  color: #000;
+}
+.container-form form .campo, .container-form textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 17px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: opx;
+}
+.container-form form textarea {
+  max-width: 530px;
+  max-height: 150px;
+}
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background-color: #fd9800;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0, 3 ease;
+}
+.container-form .btn-enviar:hover {
+  background-color: #ac6a07;
 }
 
 .title {
@@ -39,9 +104,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 700px;
   width: 100%;
   background-image: url(../multimedia/Img/retroGames.jpg);
+  background-position: top;
   background-size: cover;
   object-fit: cover;
 }
@@ -50,6 +116,36 @@
   font-size: 60px;
   font-weight: 700;
   text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subTitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #d889ff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.textSecondary {
+  font-size: 30px;
+}
+
+body {
+  background-color: #6714AF;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cardImage {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=Style.css.map */

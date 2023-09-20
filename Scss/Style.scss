@@ -1,5 +1,8 @@
-@import "navBar";
 @import "reset";
+@import"var";
+@import"mixins";
+@import "navBar";
+@import"form";
 
 .title{
     display: flex;
@@ -7,9 +10,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 700px;
     width: 100%;
     background-image: url(../multimedia/Img/retroGames.jpg);
+    background-position: top;
     background-size: cover;
     object-fit: cover;
     h1{
@@ -20,4 +24,30 @@
     }
 
 }
-
+.subTitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #d889ff;
+    text-align: center;
+    margin: 20px 0 ;
+}
+.textSecondary{
+    font-size: 30px;
+    
+}
+body{
+    background-color: #6714AF;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+.cardImage{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
