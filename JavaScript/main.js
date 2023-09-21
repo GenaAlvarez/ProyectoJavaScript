@@ -183,18 +183,71 @@
 
 //ARRAYS DE OBJETOS
 
-const person1 = {
-        nombre: "tito",
-        apellido:"WEP",
-        edad:44,
-}
-const person2 = {
-        nombre: "tito",
-        apellido:"WEP",
-        edad:44,
+// newFunction();
+
+// function newFunction() {
+//         const person1 = {
+//                 nombre: "tito",
+//                 apellido: "WEP",
+//                 edad: 44,
+//         };
+//         const person2 = {
+//                 nombre: "tito",
+//                 apellido: "WEP",
+//                 edad: 44,
+//         };
+
+//         const personas = [person1, person2];
+//         console.log(personas);
+//         personas.push("hello");
+//         console.log(personas);
+// }
+
+// const canasta = [];
+// const cantidad = Number(prompt("Cuantas frutas quiere agregar?"));
+
+// for(let i = 0; i < cantidad; i++){
+//         const nuevaFruta = prompt("ingrese el nombre de la fruta a agregar en la canasta...");
+//         const cantidadEnCanasta = canasta.push(nuevaFruta);
+//         console.log("Actualmente tiene " + cantidadEnCanasta + " frutas en la canasta, los valores son: " + canasta.join(" - "));
+// }
+
+// const precios = [];
+// const precioJuego = parseInt(prompt("Cuanto juegos quieres calcular.."));
+
+// for(let i = 0; i < precioJuego; i++){
+//         const nuevoJuego = parseInt(prompt("Ingrese el precio de esos juegos..."));
+//         const cantidadDeJuegos = precios.push(nuevoJuego);
+//         console.log("Actualmente tiene " + cantidadDeJuegos + "precios. Los precios son los siguientes " + precios.join(" - ") );
+// };
+
+
+// const precioConImpuestos = precios.map((precioFinal) => {
+//         const precioConImpuestos = precioFinal * 1.75;
+//         return "$ " + precioConImpuestos;
+// });
+// const impuestosAgregados = precioConImpuestos.filter(precioFinal =>{
+//         const valor = precioFinal.split(" ");
+//         return Number(valor[1])
+// });
+
+// console.log(impuestosAgregados);
+
+
+function person(name, lastName, age){
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+        this.talk = function(){console.log("Hello i am " + this.name );}   
 }
 
-const personas = [person1, person2]
-console.log(personas);
-personas.push("hello");
-console.log(personas);
+
+const person1 = new person("Juan", "Alvarez", 19 );
+const person2 = new person("Pepe", "Grillo", 95);
+
+console.log(person1);
+person1.talk();
+
+
+console.log(person2);
+person2.talk();
