@@ -135,11 +135,24 @@ body {
   background-color: #6714AF;
 }
 
+.containerCards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-around;
+}
+
+.cardTitle {
+  font-size: 30px;
+  color: #d889ff;
 }
 
 .cardImage {

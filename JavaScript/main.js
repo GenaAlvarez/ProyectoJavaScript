@@ -212,26 +212,26 @@
 //         console.log("Actualmente tiene " + cantidadEnCanasta + " frutas en la canasta, los valores son: " + canasta.join(" - "));
 // }
 
-// const precios = [];
-// const precioJuego = parseInt(prompt("Cuanto juegos quieres calcular.."));
+const precios = [];
+const precioJuego = parseInt(prompt("Cuanto juegos quieres calcular.."));
 
-// for(let i = 0; i < precioJuego; i++){
-//         const nuevoJuego = parseInt(prompt("Ingrese el precio de esos juegos..."));
-//         const cantidadDeJuegos = precios.push(nuevoJuego);
-//         console.log("Actualmente tiene " + cantidadDeJuegos + "precios. Los precios son los siguientes " + precios.join(" - ") );
-// };
+for(let i = 0; i < precioJuego; i++){
+        const nuevoJuego = parseInt(prompt("Ingrese el precio de esos juegos..."));
+        const cantidadDeJuegos = precios.push(nuevoJuego);
+        console.log("Actualmente tiene " + cantidadDeJuegos + "precios. Los precios son los siguientes " + precios.join(" - ") );
+};
 
 
-// const precioConImpuestos = precios.map((precioFinal) => {
-//         const precioConImpuestos = precioFinal * 1.75;
-//         return "$ " + precioConImpuestos;
-// });
-// const impuestosAgregados = precioConImpuestos.filter(precioFinal =>{
-//         const valor = precioFinal.split(" ");
-//         return Number(valor[1])
-// });
+const precioConImpuestos = precios.map((precioFinal) => {
+        const precioConImpuestos = precioFinal * 1.75;
+        return "$ " + precioConImpuestos;
+});
+const impuestosAgregados = precioConImpuestos.filter(precioFinal =>{
+        const valor = precioFinal.split(" ");
+        return Number(valor[1])
+});
 
-// console.log(impuestosAgregados);
+console.log(impuestosAgregados);
 
 
 function person(name, lastName, age){
