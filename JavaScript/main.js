@@ -1,146 +1,24 @@
-// let nombre =  prompt("Ingrese su nombre:");
 
-// const mensaje = "Hola me llamo " +  nombre + ".";
-// alert(mensaje);
+// const precios = [];
+// const precioJuego = parseInt(prompt("Cuanto juegos quieres calcular.."));
 
-// let edad = prompt ("ingrese su edad...")
-
-// if(edad >= 18){
-//   alert("Eres mayor de edad puedes acceder al sitio.");
-// }else if(edad > 14 && edad < 18){
-//   alert("Puedes ingresar con autorización de tus padres.");
-// }else{
-//   alert("No puedes entrar al sitio.");
-// }
+// for(let i = 0; i < precioJuego; i++){
+//         const nuevoJuego = parseInt(prompt("Ingrese el precio de esos juegos..."));
+//         const cantidadDeJuegos = precios.push(nuevoJuego);
+//         console.log("Actualmente tiene " + cantidadDeJuegos + "precios. Los precios son los siguientes " + precios.join(" - ") );
+// };
 
 
+// const precioConImpuestos = precios.map((precioFinal) => {
+//         const precioConImpuestos = precioFinal * 1.75;
+//         return "$ " + precioConImpuestos;
+// });
+// const impuestosAgregados = precioConImpuestos.filter(precioFinal =>{
+//         const valor = precioFinal.split(" ");
+//         return Number(valor[1])
+// });
 
-// let intentos = 3;
-// let didWin = false;
-// while (intentos != 0) {
-//   let unNumero = parseInt(prompt("Adivina el número del 1 al 10, tienes " + intentos + " intentos restantes." ));
-//   switch (unNumero) {
-//     case 5:
-//       alert("Ganaste felicitaciones");
-//       didWin = true;
-//       break;
-//     case 1:
-//     case 2:
-//     case 3:
-//     case 7:
-//     case 8:
-//     case 9:
-//     case 10:
-//       alert("Estas demasiado lejos");
-//       break;
-//     case 4:
-//     case 6:
-//       alert("Estas cerca sigue así");
-//       break;   
-
-//       default:
-//          alert("sos malardo");
-//          break;
-
-//   }
-//   intentos--;
-// }
-// if(!didWin){
-//    alert("Te quedaste sin intentos ")
-// }
-
-
-
-
-
-// const numA = parseInt(prompt("Ingrese un número..."))
-// const numB = parseInt(prompt("Ingrese su segundo número..."))
-// const operation = prompt("Ingrese una operación valida por ejemplo +, -, *, /,")
-
-// function calculator(a, b, operation){
-//   switch(operation){
-//     case "+":
-//           return a + b; 
-     
-
-//     case "-":
-//           return a - b;
-     
-    
-
-//     case "/":
-//           return a / b;
-     
-    
-
-//     case "*":
-//           return a * b;
-      
-     
-
-//     default:
-//            return 0;
-      
-//   }
-// }
-// console.log(calculator(numA, numB, operation));
-
-// function imprimePropiedad(property){
-//       const persona1 = {
-//         name:"pepe",
-//         lastName:"Argento",
-//         age:25,
-//       }
-//       console.log(persona1[property]);
-// }
-// const property = prompt("ingrese la propiedad");
-// imprimePropiedad(property)
-//OBJETO LITERAL
-// const persona1 = {
-//     name: "Gena",
-//     lastName:"Alvarez",
-//     age: 19,
-// }
-
-
-
-//FUNCIÓN CONSTRUCTORA
-// function Persona(nombre, apellido, edad){
-//     this.nombre = nombre;
-//     this.apellido = apellido;
-//     this.edad = edad;
-// }
-// //LE DAMOS UTILIDAD AL MOLDE DE LA SIGUIENTE FORMA
-// const persona2 = new Persona("gena", "alva", 19);
-// // LA EJECUTAMOS DE LA SIGUIENTE MANERA
-// console.log(persona2);
-
-
-
-
-
-//DECLARAR CON CLASES
-// class person{
-//     constructor(name, lastName, age){
-//         this.name = name;
-//         this.lastName = lastName;
-//         this.age = age;
-//     }
-        //this.talk = function(){
-        //  console.log("Hello i am " + this.name);
-        //  }
-    
-//  }  
- 
-// const person1 = new person("Homer", "Simp", 38);
-// const person2 = new person("Bartolo", "Singular", 18);
-
-// console.log(person1);
-// console.log(person1.talk);
-
-// console.log(persona1);
-// DE ESTA FORMA SE DECLACARA CON LA PROGRAMACIÓN ORIENTADA A OBJETOS
-
+// console.log(impuestosAgregados);
 
 
 // function person(name, lastName, age){
@@ -149,105 +27,164 @@
 //         this.age = age;
 //         this.talk = function(){console.log("Hello i am " + this.name );}   
 // }
-// const person1 = new person("Homer", "Simpson", 39 );
-// const person2 = new person("Marge", "Simpson", 15);
+
+
+// const person1 = new person("Juan", "Alvarez", 19 );
+// const person2 = new person("Pepe", "Grillo", 95);
 
 // console.log(person1);
-
 // person1.talk();
 
 
-// console.log(person1);
+// console.log(person2);
+// person2.talk();}
 
-// ARRAYS
-// const frutas = ["manzana","pera", "naranja","frutilla"]
 
-// console.log(frutas[1]);
-// const verCanasta = () =>{
-//         for (let i = 0; i < frutas.length; i++){
-//                 console.log(frutas);
+
+// const pantalla = document.querySelector(".pantalla");
+// const botones = document.querySelectorAll(".btn");
+// const historial = document.getElementById("historialUl")
+
+
+// botones.forEach(boton => {
+//       boton.addEventListener("click", () => {
+//         const botonApretado = boton.textContent;
+
+//         if (boton.id === "c"){
+//                 pantalla.textContent = "0";
+//                 return;
 //         }
+
+//         if (boton.id === "borrar"){
+//                 if(pantalla.textContent.length === 1 || pantalla.textContent === "Error!") {
+//                         pantalla.textContent = "0"
+//                 }else{
+//                         pantalla.textContent = pantalla.textContent.slice(0, -1);
+//                 }        
+//                 return;
+//         }
+
+//         if (boton.id === "igual"){
+//                 try{
+//                         pantalla.textContent = eval(pantalla.textContent);
+//                         const calculation = {
+//                                 expression: pantalla,
+//                                 result:pantalla.textContent     
+//                         };
+//                         let calculations = JSON.parse(localStorage.getItem("history")) || [];
+//                         if (!Array.isArray(calculations)) {
+//                                 calculations = [];
+//                         }
+//                         calculations.push(calculation);
+//                         localStorage.setItem("history", JSON.stringify(calculations));
+                        
+//                 } catch{
+//                         pantalla.textContent = "Error!";
+//                 }              
+//                 return;
+//         }
+
+//         if (pantalla.textContent === "0" || pantalla.textContent === "Error!"){
+//                 pantalla.textContent = botonApretado;
+               
+//         } else{
+//                 pantalla.textContent += botonApretado;
+//         }
+
+//       })  
+
+// })
+
+// function loadHistory(){
+//         const history = JSON.parse(localStorage.getItem("history"));
+//         return history;
 // }
-// const nuevaFruta = prompt("Ingrese su fruta favorita...")
-// frutas.push(nuevaFruta)
-// console.log(frutas);
 
-// const canasta = [];
-// const cantidad = Number(prompt("Cuantas frutas quiere agregar?"));
+// function updateHistoryList() {
+//         historial.innerHTML = " ";
+//         const history = loadHistory();
+//         for (const calculation of history) {
+//                 const listItem = document.createElement("li");
+//                 listItem.textContent = `${calculation.expression} = ${calculation.result}`;
+//                 historial.appendChild(listItem);
+//         }
+//          }
+//          updateHistoryList();
 
-// for(let i = 0; i < cantidad; i++){
-//         const nuevaFruta = prompt("ingrese el nombre de la fruta a agregar en la canasta...");
-//         const cantidadEnCanasta = canasta.push(nuevaFruta);
-//         console.log("Actualmente tiene " + cantidadEnCanasta + " frutas en la canasta, los valores son: " + canasta.join(" - "));
-// }
+const pantalla = document.querySelector(".pantalla");
+const botones = document.querySelectorAll(".btn");
+const historial = document.getElementById("historialUl");
 
-//ARRAYS DE OBJETOS
+botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+        const botonApretado = boton.textContent;
 
-// newFunction();
+        if (boton.id === "c") {
+            pantalla.textContent = "0";
+            return;
+        }
 
-// function newFunction() {
-//         const person1 = {
-//                 nombre: "tito",
-//                 apellido: "WEP",
-//                 edad: 44,
-//         };
-//         const person2 = {
-//                 nombre: "tito",
-//                 apellido: "WEP",
-//                 edad: 44,
-//         };
+        if (boton.id === "borrar") {
+            if (pantalla.textContent.length === 1 || pantalla.textContent === "Error!") {
+                pantalla.textContent = "0";
+            } else {
+                pantalla.textContent = pantalla.textContent.slice(0, -1);
+            }
+            return;
+        }
 
-//         const personas = [person1, person2];
-//         console.log(personas);
-//         personas.push("hello");
-//         console.log(personas);
-// }
+        if (boton.id === "igual") {
+            try {
+                const resultado = eval(pantalla.textContent);
+                if (!isNaN(resultado)) {
+                    const calculation = {
+                        expression: pantalla.textContent,
+                        result: resultado
+                    };
+                    let calculations = JSON.parse(localStorage.getItem("history")) || [];
+                    if (!Array.isArray(calculations)) {
+                        calculations = [];
+                    }
+                    calculations.push(calculation);
+                    localStorage.setItem("history", JSON.stringify(calculations));
+                    pantalla.textContent = resultado;
+                    
+                    updateHistoryList();
+                } else {
+                    pantalla.textContent = "Error!";
+                }
+                return;
+            } catch {
+                pantalla.textContent = "Error!";
+                return;
+            }
+        }
 
-// const canasta = [];
-// const cantidad = Number(prompt("Cuantas frutas quiere agregar?"));
+        if (pantalla.textContent === "0" || pantalla.textContent === "Error!") {
+            pantalla.textContent = botonApretado;
+        } else {
+            pantalla.textContent += botonApretado;
+        }
+    })
+})
 
-// for(let i = 0; i < cantidad; i++){
-//         const nuevaFruta = prompt("ingrese el nombre de la fruta a agregar en la canasta...");
-//         const cantidadEnCanasta = canasta.push(nuevaFruta);
-//         console.log("Actualmente tiene " + cantidadEnCanasta + " frutas en la canasta, los valores son: " + canasta.join(" - "));
-// }
-
-const precios = [];
-const precioJuego = parseInt(prompt("Cuanto juegos quieres calcular.."));
-
-for(let i = 0; i < precioJuego; i++){
-        const nuevoJuego = parseInt(prompt("Ingrese el precio de esos juegos..."));
-        const cantidadDeJuegos = precios.push(nuevoJuego);
-        console.log("Actualmente tiene " + cantidadDeJuegos + "precios. Los precios son los siguientes " + precios.join(" - ") );
-};
-
-
-const precioConImpuestos = precios.map((precioFinal) => {
-        const precioConImpuestos = precioFinal * 1.75;
-        return "$ " + precioConImpuestos;
-});
-const impuestosAgregados = precioConImpuestos.filter(precioFinal =>{
-        const valor = precioFinal.split(" ");
-        return Number(valor[1])
-});
-
-console.log(impuestosAgregados);
-
-
-function person(name, lastName, age){
-        this.name = name;
-        this.lastName = lastName;
-        this.age = age;
-        this.talk = function(){console.log("Hello i am " + this.name );}   
+function loadHistory() {
+    const history = JSON.parse(localStorage.getItem("history"));
+    return history;
 }
 
-
-const person1 = new person("Juan", "Alvarez", 19 );
-const person2 = new person("Pepe", "Grillo", 95);
-
-console.log(person1);
-person1.talk();
-
-
-console.log(person2);
-person2.talk();
+function updateHistoryList() {
+    historial.innerHTML = " ";
+    const history = loadHistory();
+    for (const calculation of history) {
+        const listItem = document.createElement("li");
+        listItem.style.textAlign = "center";
+        listItem.style.fontSize = "25px";
+        listItem.style.padding = "10px";
+        listItem.style.color = "#d889ff";
+        listItem.style.listStyle = "none";
+        listItem.textContent = `${calculation.expression} = ${calculation.result}`;
+        historial.appendChild(listItem);
+    }
+}
+updateHistoryList();

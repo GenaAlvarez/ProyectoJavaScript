@@ -20,28 +20,38 @@
         </nav>  
     </header>
     <main>
-        <div class="title"><h1>Calcula el precio final de tu juego</h1></div>
-        <h2 class="subTitle">Bienvenido a nuestra web</h2>
-        <p class="textSecondary">Espero que disfrutes del contenido,
-                                en nuestra web podras calcular el precio final de tus juegos favoritos.</p>    
-        <div class="containerCards">
-            <div class="Card">             
-                <p class="cardTitle">EA Sorts FC 24</p>
-                <img src="./multimedia/Img/FIFA24.jpeg" alt="EaFc24" class="cardImage">
-            </div>
-            <div class="Card">             
-                <p class="cardTitle">Raft</p>
-                <img src="./multimedia/Img/Raft.jpeg" alt="Raft" class="cardImage">
-            </div>
-            <div class="Card">             
-                <p class="cardTitle">7 Days To Die</p>
-                <img src="./multimedia/Img/7Daystodie.jpeg" alt="7DaysToDie" class="cardImage">
-            </div>
-            <div class="Card">             
-                <p class="cardTitle">Rust</p>
-                <img src="./multimedia/Img/Rust.jpeg" alt="Rust" class="cardImage">
-            </div>
+         <div class="title"><h1>Calculadora</h1></div>
+     <div class="calculadoraContainer"> 
+        <div class="calculadora">
+            <div class="pantalla">0</div>
+            <button id="c" class="btn">C</button>
+            <button id="borrar" class="btn">←</button>
+            <button class="btn">/</button>
+            <button class="btn">*</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">-</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">+</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button id="igual" class="btn">=</button>
+            <button id="cero" class="btn">0</button>
+            <button class="btn">.</button>
         </div>
+    </div> 
+ 
+
+
+    <div id="history" class="historial">
+        <h2 class="subTitulo">Historial de cálculos.</h2>
+        <ul id="historialUl" class="historialLista"></ul>
+    </div>
+
     </main>
 
  <script src="./JavaScript/main.js"></script>  
