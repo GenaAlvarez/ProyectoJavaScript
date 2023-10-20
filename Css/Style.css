@@ -6,7 +6,8 @@
 }
 
 .navContainer {
-  background-color: rgba(222, 190, 255, 0.168627451);
+  top: 0px;
+  background-color: #6714AF;
   height: 80px;
   width: 100%;
   display: flex;
@@ -88,7 +89,7 @@
   font-size: 16px;
   border: none;
   outline: 0px;
-  background-color: #fd9800;
+  background-color: #6714AF;
   color: #fff;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -100,19 +101,8 @@
 }
 
 .title {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  height: 700px;
-  width: 100%;
-  background-image: url(../multimedia/Img/retroGames.jpg);
-  background-position: top;
-  background-size: cover;
-  object-fit: cover;
-}
-.title h1 {
+  margin-top: 110px;
+  text-align: center;
   color: #d889ff;
   font-size: 60px;
   font-weight: 700;
@@ -120,7 +110,7 @@
 }
 
 body {
-  background-color: #6714AF;
+  background: linear-gradient(to bottom, #6714AF, #d889ff);
 }
 
 .calculadoraContainer {
@@ -185,7 +175,8 @@ body {
 }
 
 .historial {
-  background-color: #1a032f;
+  background-color: #ab10f9;
+  border-radius: 5%;
   width: 500px;
   margin: auto;
 }

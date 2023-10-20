@@ -187,4 +187,4 @@ function updateHistoryList() {
         historial.appendChild(listItem);
     }
 }
-updateHistoryList();
+updateHistoryList();    
