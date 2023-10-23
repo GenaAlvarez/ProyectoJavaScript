@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "Truco #1",
+        "respuesta": "La respuesta es siempre… 2",
+        "pasos": "Elige un número Multiplícalo por 3, Súmale 6, Divide ese resultado por 3, Réstale el número que elegiste en un principio   ¿Cuál fue el resultado? 2"                       
+    },
+    {
+        "titulo": "Truco #2",
+        "respuesta": "El número clave es 37",
+        "pasos":"Piensa en un número de tres dígitos iguales. Puede ser cualquiera del 1 al 9. Ejemplos: 222, 555, 999. Suma los dígitos. Divide el número original por el resultado de la suma del paso anterior. ¿Qué obtuviste? 37"
+    },
+    {
+        "titulo": "Truco #3",
+        "respuesta": "Multiplicar por 6",
+        "pasos":"Selecciona un número par comprendido del 1 al 9 Multiplícalo por 6 El resultado terminará con el mismo dígito por el que multiplicaste y el número ubicado en la decena será la mitad del número de las unidades. Por ejemplo: 6 x 8 = 48"
+    },
+    {
+        "titulo": "Truco #4",
+        "respuesta": "Divisible por 9",
+        "pasos":"Elije un número de varios dígitos Escríbelo en reverso Resta este número con el primero El resultado es siempre divisible por 9 Por ejemplo: 36782 - 28763 = 8019 que es lo mismo que 9 x 891."
+    },
+    {
+        "titulo": "Truco #5",
+        "respuesta": "Último truco",
+        "pasos":"Selecciona un número de 5 dígitos, pero el primero debe ser un 2. Escríbelo y guárdalo en un bolsillo. Luego, escribe en un papel otro número de 4 dígitos, por ejemplo el 5735. Pídele a la persona que esté contigo que proponga otro número de 4 dígitos. Por ejemplo dirá 8307. Escríbelo debajo del número que propusiste en el paso anterior. Después tú eliges otro número de 4 dígitos: 1692 Vuelves a pedirle a la persona que proponga otro número aleatorio de 4 dígitos, por ejemplo 8264 Finalmente tú colocas otro número de 4 dígitos debajo: 1735 Sumas los cinco números. Y el resultado es 25733. Revisa tu bolsillo. ¿Es el mismo número?¿Sorprendido?"
+    }
+]

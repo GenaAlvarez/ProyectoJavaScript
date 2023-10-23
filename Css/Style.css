@@ -85,19 +85,16 @@
   max-height: 150px;
 }
 .containerForm .btnEnviar {
-  padding: 15px;
+  padding: 10px;
   font-size: 16px;
   border: none;
   outline: 0px;
   background-color: #6714AF;
   color: #fff;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-left: 10px;
   cursor: pointer;
   transition: all 0, 3 ease;
-}
-.containerForm .btnEnviar:hover {
-  background-color: #ac6a07;
 }
 
 .title {
@@ -110,7 +107,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #6714AF, #d889ff);
+  background: linear-gradient(to right, #6714AF, #d889ff);
 }
 
 .calculadoraContainer {
@@ -175,10 +172,92 @@ body {
 }
 
 .historial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background-color: #ab10f9;
   border-radius: 5%;
   width: 500px;
   margin: auto;
+}
+
+.btnHistory {
+  background-color: #6714AF;
+  color: #FFFFFF;
+  border: 0;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.btnHistory:hover {
+  background-color: #8406c3;
+}
+
+.subTitle {
+  margin-left: 10px;
+  font-size: 30px;
+  margin-top: 40px;
+  width: 50%;
+  color: #d889ff;
+  text-shadow: 2px 2px 0px #6714AF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+#btnTrucos {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background-color: #6714AF;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0, 3 ease;
+  margin-top: 30px;
+}
+
+.trucos {
+  width: 90%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  background-color: #6714AF;
+}
+.trucos h4 {
+  color: #ddd;
+}
+.trucos p {
+  color: #eac0ff;
+}
+
+.titles {
+  margin-top: 110px;
+  margin-left: 10px;
+  color: #d889ff;
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px #6714AF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+#btnClearTrucos {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background-color: #6714AF;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0, 3 ease;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=Style.css.map */

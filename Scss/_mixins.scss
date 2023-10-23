@@ -1,16 +1,12 @@
 @mixin boton ($radius,$margin){
-    padding: 15px;
+    padding: 10px;
     font-size: 16px;
     border: none;
     outline: 0px;
     background-color: $bg-color;
     color: #fff;
     border-radius: $radius;
-    margin-bottom: $margin;
+    margin-left: $margin;
     cursor: pointer;
     transition: all 0,3 ease;
-    &:hover{
-      background-color: #ac6a07;
-    }
-
  }

@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./multimedia/Img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="/Css/Style.css">
     <title>PrimeraPreEntrega</title>
 </head>
 <body>
     <header>
         <nav class="navContainer">
+            <img src="./multimedia/Img/Logo.png" alt="logo empresa">
             <ul>
-                <li><a href="/index.html" class="navLink"><img src="./multimedia/Img/Logo.png" alt="logo empresa"></a></li>            
+                <li><a href="/index.html" class="navLink">Calculadora</a></li>  
+                <li><a href="./pages/datos.html" class="navLink">trucos</a></li>  
             </ul>
         </nav>  
     </header>   
@@ -46,11 +49,10 @@
  
     <div id="history" class="historial">
         <h2 class="subTitulo">Historial de cálculos.</h2>
-        <ul id="historialUl" class="historialLista"></ul>
+        <ul id="historialUl" class="historialLista" ></ul>
+        <button class="btnHistory" id="borrarHistorial">Borrar historial</button>
     </div>
-
-    </main>
-
  <script src="./JavaScript/main.js"></script>  
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
